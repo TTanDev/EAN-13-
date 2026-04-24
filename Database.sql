@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.44, for Linux (x86_64)
 --
--- Host: localhost    Database: shop.ttan.top
+-- Host: localhost    Database: yours Database name
 -- ------------------------------------------------------
 -- Server version	5.7.44-log
 
@@ -24,9 +24,9 @@ DROP TABLE IF EXISTS `products`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `products` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `barcode` varchar(100) NOT NULL COMMENT '商品条码',
-  `price` decimal(10,2) NOT NULL COMMENT '商品价格',
-  `image` varchar(255) NOT NULL COMMENT '商品图片路径',
+  `barcode` varchar(100) NOT NULL COMMENT '鍟嗗搧鏉＄爜',
+  `price` decimal(10,2) NOT NULL COMMENT '鍟嗗搧浠锋牸',
+  `image` varchar(255) NOT NULL COMMENT '鍟嗗搧鍥剧墖璺緞',
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `barcode` (`barcode`)
